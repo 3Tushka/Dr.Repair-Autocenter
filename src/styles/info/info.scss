@@ -1,0 +1,27 @@
+.info {
+    background-color: #ce2026;
+    text-align: center;
+
+    .info-box {
+        margin: 0 100px;
+        display: flex;
+        justify-content: center;
+
+        gap: 40px;
+
+        .info-box-item {
+            margin: 35px 0;
+            color: #fff;
+
+            &__title {
+                font-size: 19px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            &__desc {
+                padding: 0;
+            }
+        }
+    }
+}
