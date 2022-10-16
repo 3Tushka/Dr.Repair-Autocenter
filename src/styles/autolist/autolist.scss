@@ -1,0 +1,88 @@
+.autolist {
+
+    .autolist-title {
+        margin: 50px 0;
+        font-weight: 600;
+        color: #4d4d4d;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .wrapper-autolist {
+        margin: 0 300px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .autolist-column {
+            align-items: center;
+
+            .autolist-column-item {
+                margin: 30px 0;
+                font-size: 20px;
+
+                img {
+                    width: auto;
+                    height: 20px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .autolist-info-box {
+        background: #4d4d4d;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        width: 60%;
+        margin: 0 auto;
+
+        .info-box-icon {
+            background: #fff;
+            border-radius: 90px;
+            margin: 0 20px;
+            width: 74px;
+            height: 74px;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .info-box-text {
+            color: #fff;
+
+            &__title {
+                margin-bottom: 20px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            &__desc {
+                font-size: 17px;
+            }
+        }
+
+        .info-box-button {
+            margin: 0 auto;
+
+            .login {
+                background: none;
+                color: #fff;
+                padding: 12px;
+                font-size: 17px;
+                border: 2px solid #fff;
+                transition: 0.2s ease-out;
+            }
+
+            .login:hover {
+                cursor: pointer;
+                background: #fff;
+                color: black;
+            }
+        }
+    }
+}
