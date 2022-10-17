@@ -1,0 +1,123 @@
+.price {
+
+    .price-box {
+        margin: 30px auto;
+        text-align: center;
+
+        .price-box-title {
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+
+        .price-box-desc {
+            font-size: 20px;
+        }
+    }
+
+    .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .swiper-slide {
+            width: 25%;
+            height: 200px;
+            opacity: 0.4;
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            .price-slider__icon {
+                text-align: center;
+
+                img {
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                }
+            }
+
+            .price-slider__desc {
+                padding-left: 20px;
+            }
+
+        }
+
+        .swiper-slide:hover {
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+            background-color: rgba(206, 32, 38, 0.9);
+            color: #fff;
+        }
+
+        .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+
+    .price-list {
+        width: 70%;
+        max-height: 500px;
+
+        .price-list-wrapper {
+
+            .price-list-slide {
+
+                .price-list-title-box {
+                    display: flex;
+                    justify-content: space-evenly;
+                    color: #fff;
+                    padding: 20px 0;
+                    background: #ce2026;
+
+                    &__title {
+                        font-size: 20px;
+                        text-align: left;
+                    }
+
+                    &__price {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+
+                .price-list-desc-box {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    margin: 12px 0;
+                    background-color: rgba(255, 255, 255, 0.766);
+
+                    .price-list-desc-box-column {
+
+                        &__item {
+                            margin: 10px 0;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
