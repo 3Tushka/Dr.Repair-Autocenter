@@ -1,0 +1,66 @@
+.discounts {
+    padding: 10px 0;
+
+    .discounts-box {
+        text-align: center;
+        margin: 50px 0;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__desc {
+            font-size: 19px;
+        }
+    }
+
+    .discount-item {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 110px 15%;
+        gap: 50px;
+
+
+        .discount-item-column {
+
+            .discount-item-column-image {
+                width: 20vw;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            &__title {
+                font-size: 34px;
+                margin-bottom: 20px;
+            }
+
+            &__desc {
+                font-size: 18px;
+
+                a {
+                    color: red;
+                }
+
+                .discount-list {
+                    list-style: square;
+                }
+            }
+
+            &__undertext {
+                margin: 30px 0;
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+    }
+
+    .discount-item:nth-child(3) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

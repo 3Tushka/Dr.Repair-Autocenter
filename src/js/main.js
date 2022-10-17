@@ -4,6 +4,7 @@ import '../styles/info/info.scss'
 import '../styles/autolist/autolist.scss'
 import '../styles/offers/offers.scss'
 import '../styles/price/price.scss'
+import '../styles/discounts/discounts.scss'
 
 import './swiper.js'
 import 'swiper/css'
