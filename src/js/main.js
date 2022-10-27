@@ -9,6 +9,7 @@ import '../styles/quarantees/quarantees.scss'
 import '../styles/about/about.scss'
 import '../styles/stages/stages.scss'
 import '../styles/control/control.scss'
+import '../styles/reapair/repair.scss'
 
 import './swiper.js'
 import 'swiper/css'

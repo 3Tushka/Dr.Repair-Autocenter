@@ -1,0 +1,76 @@
+.repair {
+
+    .repair-box {
+        margin: 50px 0;
+        text-align: center;
+
+        &__title {
+            font-size: 38px;
+            margin-bottom: 28px;
+        }
+
+        &__desc {
+            font-size: 20px;
+            line-height: 26px;
+            padding: 0 25%;
+        }
+    }
+
+    .repair-flex {
+
+        .repair-flex-row {
+            display: flex;
+            flex-direction: column;
+
+            .repair-flex-item {
+                margin: 40px 20px;
+            }
+        }
+    }
+
+    .repair-tow {
+        transition: 0.4s ease-in-out;
+        margin-top: 50px;
+
+        .repair-tow-icon {
+            padding: 10px;
+        }
+
+        .repair-tow-contact {
+            color: #fff;
+            margin: 0 0 0 auto;
+            padding-right: 50px;
+
+            .phone-contact {
+                display: flex;
+                align-items: center;
+
+                &__image {
+                    width: 30px;
+                    height: 30px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                &__text {
+                    margin-left: 15px;
+                    font-size: 30px;
+                }
+
+            }
+
+            .contact {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .repair-tow:hover {
+        cursor: pointer;
+        background: #363636;
+    }
+}

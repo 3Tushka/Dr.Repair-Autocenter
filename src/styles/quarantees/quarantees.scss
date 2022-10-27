@@ -15,33 +15,33 @@
             font-size: 20px;
         }
     }
+}
 
-    .guarantees-flex {
+.guarantees-flex {
+    display: flex;
+    padding: 0 20%;
+    gap: 20px;
+
+    .guarantees-flex-item {
         display: flex;
-        padding: 0 20%;
+
         gap: 20px;
 
-        .guarantees-flex-item {
-            display: flex;
+        &__icon {
+            padding-right: 20px;
+            border-right: 3px solid #ce2026;
+        }
 
-            gap: 20px;
+        .guarantees-flex-item-text {
 
-            &__icon {
-                padding-right: 20px;
-                border-right: 3px solid #ce2026;
+            &__title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
             }
 
-            .guarantees-flex-item-text {
-
-                &__title {
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-                }
-
-                &__desc {
-                    font-size: 16px;
-                }
+            &__desc {
+                font-size: 16px;
             }
         }
     }
