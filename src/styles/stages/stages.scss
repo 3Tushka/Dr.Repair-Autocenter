@@ -1,0 +1,53 @@
+.stages {
+    background-image: url("/src/assets/background/pexels-andrea-piacquadio-3807277.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    .stages-wrapper {
+        backdrop-filter: blur(4px);
+
+        .stages-box {
+            padding: 25px 0;
+            display: flex;
+            justify-content: center;
+
+            &__title {
+                color: #fff;
+                font-size: 38px;
+            }
+        }
+
+        .stages-flex {
+            display: flex;
+
+            .stages-flex-item {
+                display: flex;
+                align-items: flex-end;
+                width: 25%;
+
+                .item-number {
+                    font-size: 400px;
+                    font-weight: 700;
+                    line-height: 1;
+                    color: #9a9a9a70;
+                    width: 28%;
+                    height: 100%;
+                }
+
+                .item-text {
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-transform: inherit;
+                    text-align: left;
+                    position: relative;
+                    top: -10%;
+                }
+            }
+        }
+    }
+}

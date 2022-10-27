@@ -7,6 +7,8 @@ import '../styles/price/price.scss'
 import '../styles/discounts/discounts.scss'
 import '../styles/quarantees/quarantees.scss'
 import '../styles/about/about.scss'
+import '../styles/stages/stages.scss'
+import '../styles/control/control.scss'
 
 import './swiper.js'
 import 'swiper/css'
