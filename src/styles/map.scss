@@ -1,0 +1,71 @@
+.map {
+    margin: 50px 0 0;
+    position: relative;
+    height: 455px;
+    overflow: hidden;
+
+    .map-container {
+        position: relative;
+        top: 0;
+        height: 100%;
+        z-index: 100;
+
+        .map-container-box {
+            left: 70%;
+            position: relative;
+            float: left;
+            top: 0;
+            height: 450px;
+            max-width: 370px;
+            padding: 0;
+            background-color: rgb(104, 104, 104);
+            color: #fff;
+
+            .map-container-box-item {
+                max-width: 370px;
+                float: none;
+                text-align: left;
+                max-width: unset;
+                margin: 0;
+                padding: 20px;
+
+                &__title {
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                }
+
+                &__desc {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 40px;
+                }
+
+                &__phones {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    text-align: left;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .map-box {
+            height: 100%;
+            min-height: 0;
+            z-index: -1;
+
+            position: absolute !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}

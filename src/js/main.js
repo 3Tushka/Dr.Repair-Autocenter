@@ -10,6 +10,7 @@ import '../styles/about/about.scss'
 import '../styles/stages/stages.scss'
 import '../styles/control/control.scss'
 import '../styles/reapair/repair.scss'
+import '../styles/map.scss'
 
 import './swiper.js'
 import 'swiper/css'
