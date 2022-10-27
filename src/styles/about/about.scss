@@ -1,0 +1,97 @@
+.about-us {
+    padding: 10px 0;
+
+    .about-us-box {
+        text-align: center;
+        margin: 30px auto;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__desc {
+            padding: 0 10%;
+            font-size: 19px;
+        }
+    }
+
+    .about-us-flex {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+        .about-us-flex-item {
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+
+            &__icon {
+                width: 100px;
+                height: auto;
+
+                img {
+                    width: 60px;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            &__text {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .about-us-flex-item::after {
+            margin: 5px 0;
+            display: block;
+            content: '';
+            border-bottom: 2px solid red;
+            transform: scaleX(0);
+            transition: all 250ms ease-in-out;
+        }
+
+        .about-us-flex-item:hover::after {
+            transform: scaleX(1);
+        }
+    }
+
+    .about-us-content {
+        display: flex;
+        justify-content: space-evenly;
+        background-image: url("/src/assets/background/pexels-mike-b-190574.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        gap: 20px;
+        padding: 50px 10%;
+
+        .about-us-content-item {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.877);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            padding: 20px;
+
+            &__image {
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            &__text {
+                width: 20vw;
+                flex-wrap: wrap;
+                font-size: 20px;
+
+                .about-list {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
