@@ -1,17 +1,7 @@
 .offers {
 
-    .offers-box {
-        margin: 90px auto;
-        text-align: center;
-
-        .offers-box-title {
-            text-transform: uppercase;
-            font-size: 30px;
-        }
-
-        .offers-box-desc {
-            font-size: 23px;
-        }
+    &__title {
+        font-size: 30px;
     }
 
     .wrapper-offers {

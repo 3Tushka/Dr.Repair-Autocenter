@@ -1,16 +1,8 @@
 .repair {
 
     .repair-box {
-        margin: 50px 0;
-        text-align: center;
-
-        &__title {
-            font-size: 38px;
-            margin-bottom: 28px;
-        }
 
         &__desc {
-            font-size: 20px;
             line-height: 26px;
             padding: 0 25%;
         }
@@ -30,7 +22,6 @@
 
     .repair-tow {
         transition: 0.4s ease-in-out;
-        margin-top: 50px;
 
         .repair-tow-icon {
             padding: 10px;
@@ -48,12 +39,6 @@
                 &__image {
                     width: 30px;
                     height: 30px;
-
-                    img {
-                        width: 100%;
-                        height: auto;
-                        object-fit: cover;
-                    }
                 }
 
                 &__text {

@@ -15,8 +15,11 @@
             justify-content: center;
 
             &__title {
-                color: #fff;
                 font-size: 38px;
+
+                h2 {
+                    color: #fff;
+                }
             }
         }
 

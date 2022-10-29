@@ -1,0 +1,19 @@
+.footer {
+    background: #4d4d4d;
+    color: #fff;
+
+    .footer-box {
+        text-align: center;
+        padding: 0 20%;
+
+        h5 {
+            padding-top: 20px;
+            margin: 0;
+        }
+
+        &__desc {
+            font-size: 12px;
+            padding: 20px 0;
+        }
+    }
+}

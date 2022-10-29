@@ -48,6 +48,16 @@
                     }
                 }
             }
+
+            .control-btn {
+                background-color: #4d4d4d;
+                width: 40%;
+            }
+
+            .control-btn:hover {
+                background-color: #ce2026;
+                color: #fff;
+            }
         }
 
         .control-box-item:nth-child(1) {

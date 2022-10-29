@@ -13,6 +13,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
+    "scss": "^0.2.4",
     "swiper": "^8.4.4"
   }
 }
