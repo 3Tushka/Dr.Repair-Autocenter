@@ -1,3 +1,7 @@
+offer-red-quote {
+    color: #ce2026;
+}
+
 .form-btn {
     background: none;
     color: #fff;
@@ -74,6 +78,27 @@ img {
 
         &__desc {
             font-size: 17px;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .help-box {
+        flex-direction: column;
+        width: 100%;
+
+        .help-box-text {
+            padding: 0 20px;
+
+            &__title {
+                font-size: 15px;
+            }
+        }
+
+        .help-box-button {
+            padding: 0 20px;
         }
     }
 }
