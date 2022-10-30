@@ -1,4 +1,5 @@
 import '../styles/style.scss'
+import '../styles/sections/form.scss'
 import '../styles/sections/promo.scss'
 import '../styles/sections/info.scss'
 import '../styles/sections/autolist.scss'
@@ -18,4 +19,7 @@ import './swiper.js'
 import 'swiper/css'
 import 'swiper/css/bundle'
 import 'swiper/css/navigation'
+import { closeForm, openForm } from './pop-up.js'
 
+openForm();
+closeForm();

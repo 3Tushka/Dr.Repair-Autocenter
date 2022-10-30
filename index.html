@@ -12,21 +12,22 @@
 
 <body>
   <header class="header">
-    <a href="" class="logo">
+    <a href="#promo" class="logo">
       Dr.Repair
     </a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#prices">Pricing Plans</a></li>
-      <li><a href="#insurance">Insurance</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#offers">Послуги СТО</a></li>
+      <li><a href="#price">Ціни</a></li>
+      <li><a href="#discounts">Акції</a></li>
+      <li><a href="#quarantees">Гарантції</a></li>
+      <li><a href="#about">Про нас</a></li>
+      <li><a href="#contact">Контакти</a></li>
     </ul>
   </header>
 
-  <section class="promo">
+  <section class="promo" id="promo">
     <div class="promo-box">
       <div class="promo-box-title">
         Довірте технічне обслуговування автомобіля професіоналам!
@@ -36,11 +37,45 @@
           Отримайте подарунок при онлайн записі
         </div>
         <div class="btn-login">
-          <button class="login form-btn">Записатися на сервіс</button>
+          <button class="login form-btn" id="form-btn" href="#from-btn">Записатися на сервіс</button>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="form-popup" id="myForm">
+    <form action="" class="login-form">
+      <div class="form-title-close">
+        <h2>Записатися на сервіс</h2>
+        <button id="btn-close">
+          <img src="/src/assets/icons/icons8-macos-close-64.png" alt="close-form">
+        </button>
+      </div>
+      та отримати в ПОДАРУНОК * додатково одну з трьох послуг:
+      <ul class="form-gifts">
+        <li class="form-gifts-item">діагностика ходової;</li>
+        <li class="form-gifts-item">перевірка рівня світла фар;</li>
+        <li class="form-gifts-item">перевірка стану гальмівної та охолоджуючої рідини</li>
+      </ul>
+      <div class="form-fields">
+        <div class="form-fields-item">
+          <label for="username">Ім'я</label>
+          <input type="text" id="username " name="username" placeholder="Ім'я" required>
+        </div>
+        <div class="form-fields-item">
+          <label for="telephone">Телефон</label>
+          <input type="tel" id="telephone " name="telephone" placeholder="0xxxxxxxxx" required>
+        </div>
+      </div>
+      <div class="form-desc">
+        *Під подарунком мається на увазі можливість додатково отримати одну з трьох запропонованих послуг за фіксованою
+        ціною 1,20 грн. (без урахування комісії банку).
+      </div>
+      <div class="form-submit">
+        <button class="submit" id="submit-btn">Відправити</button>
+      </div>
+    </form>
+  </div>
 
 
   <section class="info">
@@ -194,7 +229,7 @@
     </div>
   </section>
 
-  <section class="offers section-title">
+  <section class="offers section-title" id="offers">
     <div class="offers-box section-title-box">
       <div class="offers-box__title section-title-box__title">
         <h2>Чим можемо допомогти</h2>
@@ -361,7 +396,7 @@
     </div>
   </section>
 
-  <section class="price section-title">
+  <section class="price section-title" id="price">
     <div class="price-box section-title-box">
       <div class="price-box__title section-title-box__title">
         <h2>Скільки коштує</h2>
@@ -684,7 +719,7 @@
   </section>
 
 
-  <section class="discounts section-title">
+  <section class="discounts section-title" id="discounts">
     <div class="discounts-box section-title-box">
       <div class="discounts-box__title section-title-box__title">
         <h2>ЕКОНОМТЕ З АКЦІЯМИ</h2>
@@ -828,7 +863,7 @@
   </section>
 
 
-  <section class="guarantees">
+  <section class="guarantees" id="quarantees">
     <div class="guarantees-box">
       <div class="guarantees-box__title">
         <h2>ЯКІ ГАРАНТІЇ?</h2>
@@ -969,7 +1004,7 @@
     </div>
   </section>
 
-  <section class="about-us">
+  <section class="about-us" id="about">
     <div class="about-us-box">
       <div class="about-us-box__title">
         <h2>Про нас</h2>
@@ -1206,7 +1241,7 @@
     </div>
   </section>
 
-  <section class="map" aria-hidden="false">
+  <section class="map" id="contact" aria-hidden="false">
     <div class="map-container">
       <div class="map-container-box">
         <div class="map-container-box-item">
