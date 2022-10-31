@@ -89,3 +89,26 @@
         flex-direction: row-reverse;
     }
 }
+
+@media (max-width:768px) {
+
+    .discounts {
+
+        .discount-item {
+            margin: 0 20px;
+            flex-direction: column;
+            gap: 20px;
+
+            .discount-item-column {
+
+                .discount-item-column-image {
+                    width: 100%;
+                }
+            }
+        }
+
+        .discount-item:nth-child(3) {
+            flex-direction: column;
+        }
+    }
+}

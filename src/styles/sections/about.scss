@@ -1,5 +1,5 @@
 .about-us {
-    padding: 10px 0;
+    margin: 10px 0;
 
     .about-us-box {
         text-align: center;
@@ -23,11 +23,10 @@
 
         .about-us-flex-item {
             text-align: center;
-            padding: 20px;
             cursor: pointer;
 
             &__icon {
-                width: 100px;
+                max-width: 100px;
                 height: auto;
 
                 img {
@@ -74,15 +73,6 @@
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             padding: 20px;
 
-            &__image {
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                }
-            }
-
             &__text {
                 width: 20vw;
                 flex-wrap: wrap;
@@ -90,6 +80,74 @@
 
                 .about-list {
                     font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .about-us {
+
+        .about-us-flex {
+            width: 100%;
+            gap: 0;
+            justify-content: space-evenly;
+
+            .about-us-flex-item {
+                text-align: center;
+                cursor: pointer;
+
+                &__icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 40px;
+                    }
+                }
+
+                &__text {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .about-us-content {
+            flex-direction: column;
+
+            .about-us-content-item {
+
+                &__text {
+                    width: 100%;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .about-us {
+
+        .about-us-flex {
+            justify-content: space-evenly;
+
+            .about-us-flex-item {
+
+                &__icon {
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                &__text {
+                    font-size: 15px;
+                    font-weight: 600;
                 }
             }
         }

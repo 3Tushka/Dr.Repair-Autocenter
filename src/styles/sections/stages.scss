@@ -31,7 +31,7 @@
                 align-items: flex-end;
                 width: 25%;
 
-                .item-number {
+                &__number {
                     font-size: 400px;
                     font-weight: 700;
                     line-height: 1;
@@ -40,7 +40,7 @@
                     height: 100%;
                 }
 
-                .item-text {
+                &__text {
                     font-size: 20px;
                     line-height: 29px;
                     color: #fff;
@@ -49,6 +49,30 @@
                     text-align: left;
                     position: relative;
                     top: -10%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .stages {
+
+        .stages-wrapper {
+
+            .stages-box {
+
+                &__title {
+                    font-size: 20px;
+                }
+            }
+
+            .stages-flex {
+                flex-direction: column;
+
+                .stages-flex-item {
+                    align-items: center;
+                    width: 100%;
                 }
             }
         }
