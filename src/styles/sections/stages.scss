@@ -25,11 +25,12 @@
 
         .stages-flex {
             display: flex;
+            justify-content: space-evenly;
 
             .stages-flex-item {
                 display: flex;
                 align-items: flex-end;
-                width: 25%;
+                max-width: 25%;
 
                 &__number {
                     font-size: 400px;
@@ -72,7 +73,41 @@
 
                 .stages-flex-item {
                     align-items: center;
-                    width: 100%;
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .stages {
+
+        .stages-wrapper {
+
+            .stages-box {
+
+                &__title {
+                    font-size: 20px;
+                }
+            }
+
+            .stages-flex {
+
+                .stages-flex-item {
+                    align-items: center;
+                    width: 200px;
+
+                    &__number {
+                        font-size: 300px;
+                    }
+
+                    &__text {
+                        font-size: 15px;
+                        line-height: 22px;
+                        max-width: 100px;
+
+                    }
                 }
             }
         }

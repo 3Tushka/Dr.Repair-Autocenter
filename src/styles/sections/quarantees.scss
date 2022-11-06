@@ -19,7 +19,7 @@
 
 .guarantees-flex {
     display: flex;
-    padding: 0 20%;
+    padding: 0 200px;
     gap: 20px;
 
     .guarantees-flex-item {
@@ -30,6 +30,10 @@
         &__icon {
             padding-right: 20px;
             border-right: 3px solid #ce2026;
+
+            img {
+                width: 50px;
+            }
         }
 
         .guarantees-flex-item-text {
@@ -164,6 +168,23 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .guarantees-flex {
+        padding: 0 40px;
+
+        .guarantees-flex-item {
+            align-items: center;
+        }
+    }
+
+    .why-us {
+        .why-us-wrapper {
+            padding: 20px 100px;
         }
     }
 }

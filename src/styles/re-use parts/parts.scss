@@ -52,7 +52,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px;
     width: 60%;
     margin: 0 auto;
 
@@ -61,7 +61,7 @@ img {
         border-radius: 90px;
         margin: 0 20px;
         width: 74px;
-        height: 74px;
+        height: auto;
     }
 
     .help-box-text {
@@ -87,6 +87,7 @@ img {
 
     .help-box {
         flex-direction: column;
+        gap: 20px;
         width: 100%;
 
         .help-box-text {
@@ -96,9 +97,16 @@ img {
                 font-size: 15px;
             }
         }
+    }
+}
 
-        .help-box-button {
-            padding: 0 20px;
+@media (max-width:1440px) {
+    .help-box {
+        width: 80%;
+
+        .help-box-icon {
+            max-width: 74px;
+            height: auto;
         }
     }
 }

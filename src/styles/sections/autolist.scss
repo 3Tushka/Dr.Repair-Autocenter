@@ -1,49 +1,26 @@
 .autolist {
 
     .wrapper-autolist {
-        margin: 0 300px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: 0 auto 50px;
 
-        .autolist-flex-item {
+        .autolist-column {
             display: flex;
+            flex-direction: column;
+            gap: 15px;
 
-            .autolist-column {
+            &__item {
+                display: flex;
+                gap: 20px;
                 align-items: center;
+                font-size: 20px;
 
-                .autolist-column-item {
-                    margin: 30px 0;
-                    font-size: 20px;
-                    display: flex;
-
-                    img {
-                        width: auto;
-                        height: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:768px) {
-    .autolist {
-
-        .wrapper-autolist {
-            margin: 0;
-
-            .autolist-flex-item {
-                flex-direction: column;
-
-                .autolist-column {
-
-                    .autolist-column-item {
-                        font-size: 30px;
-
-                        img {
-                            height: 40px;
-                        }
-                    }
+                img {
+                    width: 50px;
+                    height: auto;
+                    object-fit: cover;
                 }
             }
         }
@@ -54,19 +31,39 @@
     .autolist {
 
         .wrapper-autolist {
+            margin: 0 25% 50px;
+            flex-direction: column;
 
-            .autolist-flex-item {
-                .autolist-column {
 
-                    .autolist-column-item {
-                        font-size: 18px;
-                        margin: 14px 0;
+            .autolist-column {
 
-                        img {
-                            height: 20px;
-                        }
-                    }
+                &__item:nth-child(n+3) {
+                    display: none;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .autolist {
+
+        .wrapper-autolist {
+
+            .autolist-column:nth-child(n+3) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .autolist {
+
+        .wrapper-autolist {
+
+            .autolist-column:nth-child(n+4) {
+                display: none;
             }
         }
     }

@@ -11,8 +11,7 @@
     .repair-flex {
 
         .repair-flex-row {
-            display: flex;
-            flex-direction: column;
+            display: grid;
 
             .repair-flex-item {
                 margin: 40px 20px;
@@ -63,7 +62,7 @@
 @media (max-width:768px) {
 
     .repair {
-        text-align: center;
+        margin: 0 20px;
 
         .repair-box {
 
@@ -77,6 +76,19 @@
             .repair-tow-contact {
                 margin: 20px 0 0;
                 padding: 0;
+            }
+        }
+    }
+}
+
+@media(min-width:769px) and (max-width:1440px) {
+    .repair {
+
+        .repair-flex-item {
+
+            img {
+                width: 50px;
+                height: auto;
             }
         }
     }

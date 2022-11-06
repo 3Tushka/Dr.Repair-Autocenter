@@ -9,7 +9,7 @@
         .control-box-item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-self: center;
 
             &__h2 {
                 font-size: 38px;
@@ -58,8 +58,15 @@
         }
 
         .control-box-item:nth-child(1) {
-            width: 30%;
+            width: 40%;
         }
+    }
+}
+
+@media (max-width:455px) {
+
+    .control {
+        display: none;
     }
 }
 
@@ -76,6 +83,43 @@
             .control-box-item:nth-child(1) {
                 width: 100%;
             }
+
+            .control-box-item {
+
+                .control-btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .control {
+        margin: 0 50px;
+
+        .control-box {
+            gap: 20px;
+
+            .control-box-item:nth-child(1) {
+                width: 60%;
+            }
+
+            .control-box-item {
+
+                .control-btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1025px) and (max-width:1440px) {
+    .control {
+        margin: 0 70px;
+
+        .control-box {
 
             .control-box-item {
 

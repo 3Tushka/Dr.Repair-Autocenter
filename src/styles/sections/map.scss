@@ -1,18 +1,17 @@
 .map {
     margin: 50px 0 0;
     position: relative;
-    height: 455px;
+    max-height: 455px;
     overflow: hidden;
 
     .map-container {
-        position: relative;
         top: 0;
-        height: 100%;
-        z-index: 100;
+        max-height: 100%;
+        z-index: 2;
 
         .map-container-box {
-            left: 70%;
             position: relative;
+            left: 70%;
             float: left;
             top: 0;
             height: 450px;
@@ -22,10 +21,8 @@
             color: #fff;
 
             .map-container-box-item {
-                max-width: 370px;
                 float: none;
                 text-align: left;
-                max-width: unset;
                 margin: 0;
                 padding: 20px;
 
